@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高欣 Gelsey · 作品集</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 背景插画装饰层 -->
+<div class="art-decor" aria-hidden="true">
+  <img class="ad-portrait" src="assets/illustrations/portrait-line.png" alt="">
+  <img class="ad-butterfly" src="assets/illustrations/butterfly.png" alt="">
+  <img class="ad-flower" src="assets/illustrations/flower-face.png" alt="">
+  <div class="ad-line ad-line-1"></div>
+  <div class="ad-line ad-line-2"></div>
+  <div class="ad-star ad-star-1">✳</div>
+  <div class="ad-star ad-star-2">✻</div>
+</div>
+
+<!-- 顶部 -->
+<header class="topbar" id="topbar">
+  <a href="#home" class="brand">M<span>/</span>G</a>
+  <nav class="nav" id="nav">
+    <a href="#ai-works">AI 作品</a>
+    <a href="#about">ABOUT</a>
+    <a href="#operations">OPS</a>
+    <a href="#photography">PHOTO</a>
+    <a href="#planning">PLAN</a>
+    <a href="#design">DESIGN</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="菜单"><span></span><span></span></button>
+</header>
+
+<!-- ============ 首屏 ============ -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hand-note">Happen<br>Ending</div>
+      <div class="hero-illustration">
+        <div class="blue-blob"></div>
+        <img src="assets/portfolio/illustration.png" alt="高欣插画形象">
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="vert-text">YOU SHOULD &nbsp; ALWAYS &nbsp; BE BRAVE</div>
+      <div class="split-letters">
+        <span>Y</span><span>O</span><span>U</span>
+      </div>
+      <h1 class="hero-name">高欣</h1>
+      <div class="hero-en">Gelsey</div>
+      <p class="hero-role">内容运营 · 摄影 · 策划 · 视觉设计</p>
+      <div class="hero-scribble">
+        <span class="scribble-line"></span>
+        <span>GO STRAIGHT AHEAD</span>
+      </div>
+      <div class="music-card" id="musicCard">
+        <button class="music-toggle" id="musicToggle" aria-label="播放音乐">
+          <span class="music-icon">♫</span>
+        </button>
+        <div class="music-info">
+          <div class="music-label">♫ NOW PLAYING</div>
+          <div class="music-title">Who Says — Selena Gomez</div>
+          <div class="music-progress"><span id="musicBar"></span></div>
+        </div>
+        <audio id="bgm" src="assets/audio/who-says.mp3" loop preload="metadata"></audio>
+      </div>
+      <div class="hero-thanks">THANKS</div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue">scroll ↓</a>
+</section>
+
+<!-- ============ 关于我 ============ -->
+<section class="section about" id="about">
+  <div class="about-grid">
+    <div class="about-head reveal">
+      <div class="mini-label">M / G</div>
+      <div class="stack-letters"><span>M</span><span>O</span><span>L</span><span>C</span><span>U</span></div>
+      <div class="about-portrait reveal">
+        <img src="assets/portfolio/portrait.jpg" alt="个人照">
+        <span class="circle-mark"></span>
+      </div>
+    </div>
+    <div class="about-body reveal">
+      <div class="kicker">PERSONAL STATEMENT / 个人简述</div>
+      <h2 class="about-title">你好，我是 <em>Gelsey</em></h2>
+      <p class="lead">独立完成账号 0-1 搭建，依托内容渠道完成产品对外定位落地、市场认知验证。</p>
+      <p>可独立承接内容全案策划、图文短视频物料制作、用户及客户咨询对接、数据复盘迭代。擅长通过内容渠道收集一线用户反馈，反向优化产品宣传口径、卖点与配套材料；具备项目全流程落地、跨部门协同、精细化数据分析能力。</p>
+      <p>熟练使用 Canva、Photoshop、Graph Pad、SPSS、CAD、GIS、Sketch Up、Office 等工具。</p>
+      <div class="about-facts">
+        <div><span>EDU</span> 东北林业大学（211）· 硕士</div>
+        <div><span>TEL</span> 19847375642</div>
+        <div><span>MAIL</span> 1120657405@qq.com</div>
+      </div>
+      <div class="skills">
+        <span>Canva</span><span>Photoshop</span><span>SPSS</span><span>CAD</span><span>Sketch Up</span><span>Office</span>
+      </div>
+    </div>
+  </div>
+  <div class="big-word reveal">AMBITIOUS</div>
+</section>
+
+<!-- ============ 目录 ============ -->
+<section class="toc reveal">
+  <div class="toc-title">The<br>Table <em>Of</em><br>Content</div>
+  <div class="toc-list">
+    <a href="#ai-works"><b>01</b><span>AI works <em>AI 作品</em></span><i>↗</i></a>
+    <a href="#operations"><b>02</b><span>Operations <em>运营</em></span><i>↗</i></a>
+    <a href="#photography"><b>03</b><span>Photography <em>摄影</em></span><i>↗</i></a>
+    <a href="#planning"><b>04</b><span>Planning <em>策划</em></span><i>↗</i></a>
+    <a href="#design"><b>05</b><span>Design works <em>设计</em></span><i>↗</i></a>
+  </div>
+</section>
+
+<!-- ============ 01 AI 作品 ============ -->
+<section class="section ai-works" id="ai-works">
+  <div class="chapter reveal">
+    <div class="chapter-label">01 / AI WORKS</div>
+    <h2><em>AI</em> 作品</h2>
+    <p>ARTIFICIAL INTELLIGENCE PROJECTS</p>
+    <span class="chapter-num">01</span>
+  </div>
+
+  <!-- 项目主卡片 -->
+  <div class="ai-project reveal">
+    <div class="ai-project-info">
+      <div class="ai-badge">PROJECT · WECHAT MINI PROGRAM</div>
+      <h3>贴贴 · 冰箱贴工坊</h3>
+      <p class="ai-en">Memory Fridge — turn photos into healing magnets</p>
+      <p>一款把照片变成「治愈系冰箱贴」的微信小程序。上传照片，AI 依据 <b>时间 · 地点 · 人物 · 场景</b> 四个维度生成一句专属治愈文案，以手写体落在照片旁，连同日期、时间与制作人名字，一起冻进这段记忆里。</p>
+      <ul class="ai-features">
+        <li><b>01</b> 上传照片，一键生成手绘风冰箱贴</li>
+        <li><b>02</b> 治愈文案 AI 自动生成，也可亲手撰写</li>
+        <li><b>03</b> 草稿保存，随时回来继续打磨</li>
+        <li><b>04</b> 「我的冰箱」按时间地点陈列所有记忆</li>
+        <li><b>05</b> 社区广场：浏览、收藏他人的温暖</li>
+      </ul>
+      <div class="ai-tools"><span>AI 文案生成</span><span>AI 图像生成</span><span>UI 设计</span><span>交互原型</span></div>
+      <a href="app/index.html" class="btn-view">体验小程序完整预览 ↗</a>
+    </div>
+    <div class="ai-project-visual">
+      <div class="ai-phone">
+        <div class="ai-phone-notch"></div>
+        <img src="assets/app-screens/screen-make.jpg" alt="制作页界面">
+        <div class="ai-phone-caption">上传照片，生成属于你的冰箱贴</div>
+      </div>
+      <span class="ai-tag">制作页 · 真实界面</span>
+    </div>
+  </div>
+
+  <!-- 设计理念：产品经理思维 -->
+  <div class="ai-vision reveal">
+    <div class="ai-vision-head">
+      <span class="ai-vision-tag">DESIGN RATIONALE</span>
+      <h4>设计理念</h4>
+      <p class="ai-vision-slogan">「让每一张照片，都被一句温柔的话记住。」</p>
+    </div>
+    <div class="ai-vision-grid">
+      <div class="vision-card">
+        <b>WHY · 痛点洞察</b>
+        <p>手机相册里躺着几千张照片，却很少被再次翻看。记忆缺少一个有温度的出口——照片不该只是被存档，更该被「陈列」。</p>
+      </div>
+      <div class="vision-card">
+        <b>WHAT · 核心方案</b>
+        <p>上传照片后，AI 自动解析 <b>时间 / 地点 / 人物 / 场景</b> 四要素，生成一句只属于这张照片的治愈文案；它以手写体写在图片旁，并附上日期、时间与制作人名字——像一张亲手写的便签。</p>
+      </div>
+      <div class="vision-card">
+        <b>HOW · 双通道文案</b>
+        <p>文案支持 <b>AI 自动生成</b>（懒人一键）与 <b>自由撰写</b>（亲手表达）双通道；生成后可随时编辑，确保每句话都是「自己的话」。</p>
+      </div>
+      <div class="vision-card">
+        <b>LOOP · 增长闭环</b>
+        <p>制作 → 草稿打磨 → 挂上个人冰箱 → 分享到社区被收藏与下载。情感价值驱动自传播，冰箱成为一个人的「记忆陈列馆」。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 四大页面截图 -->
+  <div class="ai-shots reveal">
+    <div class="ai-shots-head"><span>PRODUCT SCREENS</span><h4>四个页面 · 完整用户旅程</h4></div>
+    <div class="shots-grid">
+      <figure>
+        <img src="assets/app-screens/screen-make.jpg" alt="制作页">
+        <figcaption><b>① 制作</b><span>上传照片 · AI 生成治愈文案与手绘相框</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/app-screens/screen-draft.jpg" alt="草稿页">
+        <figcaption><b>② 草稿</b><span>保存与修改 · 文案可换、相框可调</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/app-screens/screen-fridge.jpg" alt="我的冰箱">
+        <figcaption><b>③ 我的冰箱</b><span>历史作品挂上冰箱 · 以时间地点命名</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/app-screens/screen-community.jpg" alt="社区页">
+        <figcaption><b>④ 社区</b><span>浏览他人作品 · 收藏与下载温暖</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 运营 ============ -->
+<section class="section operations" id="operations">
+  <div class="chapter reveal">
+    <div class="chapter-label">02 / OPERATIONS</div>
+    <h2>账号<em>运营</em></h2>
+    <p>ACCOUNT MANAGEMENT</p>
+    <span class="chapter-num">02</span>
+  </div>
+  <div class="ops-intro reveal">
+    <p>独立完成渠道品牌定位、目标人群梳理、产品传播框架与内容排期的整体规划，统一产品对外输出口径与卖点表达；搭建标准化内容输出链路，同步承接客户咨询，沉淀一线市场疑问与需求，反向迭代产品宣传物料、梳理产品卖点。落地首月，账号形成稳定内容节奏，持续收到客户咨询，完成产品从品牌曝光到市场信息回收的闭环。</p>
+  </div>
+  <div class="stat-grid reveal">
+    <div class="stat"><b>81</b><span>首月涨粉</span></div>
+    <div class="stat"><b>2000+</b><span>首月赞藏</span></div>
+    <div class="stat"><b>1w+</b><span>单篇最高赞藏</span></div>
+    <div class="stat"><b>7.3w</b><span>累计赞藏</span></div>
+  </div>
+  <!-- 一键直达运营账号 -->
+  <div class="accounts reveal">
+    <div class="accounts-head">
+      <span class="accounts-tag">LIVE ACCOUNTS</span>
+      <h4>一键直达运营账号 <em>点击链接或复制口令即可查看主页</em></h4>
+    </div>
+    <div class="accounts-grid">
+      <a class="account-card" href="https://xhslink.cn/o/4iqfSVi54UZ" target="_blank" rel="noopener">
+        <span class="ac-badge">自媒体账号</span>
+        <b class="ac-name">@吃掉小猪包</b>
+        <span class="ac-stat"><i>3140</i> 粉丝 · 小红书</span>
+        <span class="ac-link">点击查看Ta的主页 ↗</span>
+      </a>
+      <a class="account-card" href="https://xhslink.cn/o/5WM98n3bdzW" target="_blank" rel="noopener">
+        <span class="ac-badge ac-badge-2">个人账号</span>
+        <b class="ac-name">@高欣 Gelsey</b>
+        <span class="ac-stat"><i>1093</i> 粉丝 · 小红书</span>
+        <span class="ac-link">点击来看我的主页 ↗</span>
+      </a>
+      <a class="account-card" href="https://xhslink.cn/o/5m6d31Il3ev" target="_blank" rel="noopener">
+        <span class="ac-badge ac-badge-3">官方蓝V</span>
+        <b class="ac-name">@君迪科技</b>
+        <span class="ac-stat"><i>2024</i> 赞与收藏 · 小红书</span>
+        <span class="ac-link">点击查看Ta的主页 ↗</span>
+      </a>
+      <a class="account-card" href="https://v.douyin.com/96ZikRTyGjU/" target="_blank" rel="noopener">
+        <span class="ac-badge ac-badge-4">企业宣传片</span>
+        <b class="ac-name">君迪数智方案</b>
+        <span class="ac-stat">抖音 · 企业宣传视频</span>
+        <span class="ac-link">复制口令打开抖音观看 ↗</span>
+      </a>
+    </div>
+    <p class="accounts-note">＊ 若链接无法直接跳转，可复制口令到对应 App 打开：小红书 7.48 复制打开抖音，看看【君迪科技的作品】还在头疼能源浪费？君迪数智方案帮企业提效降本✨ https://v.douyin.com/96ZikRTyGjU/</p>
+  </div>
+  <div class="gallery reveal" data-gallery="ops">
+    <figure><img src="assets/portfolio/op-01.jpg" alt="账号运营"><figcaption>账号界面</figcaption></figure>
+    <figure><img src="assets/portfolio/op-02.jpg" alt="账号运营"><figcaption>品牌定位</figcaption></figure>
+    <figure><img src="assets/portfolio/op-03.jpg" alt="账号运营"><figcaption>内容链路</figcaption></figure>
+    <figure><img src="assets/portfolio/data-01.jpg" alt="数据展示"><figcaption>Data / 01</figcaption></figure>
+    <figure><img src="assets/portfolio/data-02.jpg" alt="数据展示"><figcaption>Data / 02</figcaption></figure>
+  </div>
+</section>
+
+<!-- ============ 摄影 ============ -->
+<section class="section photography" id="photography">
+  <div class="chapter reveal">
+    <div class="chapter-label">03 / PHOTOGRAPHY</div>
+    <h2>摄影<em>作品</em></h2>
+    <p>PHOTOGRAPHY WORKS</p>
+    <span class="chapter-num">03</span>
+  </div>
+  <div class="photo-intro reveal">
+    <p>以下均为本人过往原创拍摄作品，图片自带账号水印仅用于原创版权防伪、防止盗用侵权，所有画面均为本人独立拍摄创作。</p>
+  </div>
+  <div class="photo-grid reveal" data-gallery="photo">
+    <figure class="p1"><img src="assets/portfolio/photo-01.jpg" alt="摄影作品"><figcaption>Life</figcaption></figure>
+    <figure class="p2"><img src="assets/portfolio/photo-02.jpg" alt="摄影作品"><figcaption>Portrait</figcaption></figure>
+    <figure class="p3"><img src="assets/portfolio/photo-03.jpg" alt="摄影作品"><figcaption>Daily</figcaption></figure>
+    <figure class="p4"><img src="assets/portfolio/photo-04.jpg" alt="摄影作品"><figcaption>Portrait</figcaption></figure>
+    <figure class="p5"><img src="assets/portfolio/photo-05.jpg" alt="摄影作品"><figcaption>Youth</figcaption></figure>
+    <figure class="p6"><img src="assets/portfolio/photo-06.jpg" alt="摄影作品"><figcaption>Portrait</figcaption></figure>
+    <figure class="p7"><img src="assets/portfolio/photo-07.jpg" alt="摄影作品"><figcaption>Light</figcaption></figure>
+  </div>
+</section>
+
+<!-- ============ 策划 ============ -->
+<section class="section planning" id="planning">
+  <div class="chapter reveal">
+    <div class="chapter-label">04 / PLANNING</div>
+    <h2>策划</h2>
+    <p>PLANNING WORKS</p>
+    <span class="chapter-num">04</span>
+  </div>
+  <div class="plan-cards reveal" data-gallery="plan">
+    <article class="plan-card">
+      <span class="card-no">01</span>
+      <h3>摄影策划 <em>PHOTOGRAPHY PLAN</em></h3>
+      <div class="card-imgs">
+        <img src="assets/portfolio/plan-01.jpg" alt="摄影策划">
+        <img src="assets/portfolio/plan-02.jpg" alt="摄影策划">
+      </div>
+    </article>
+    <article class="plan-card">
+      <span class="card-no">02</span>
+      <h3>视频拍摄策划 <em>VIDEO & COPYWRITING</em></h3>
+      <div class="card-imgs">
+        <img src="assets/portfolio/plan-04.jpg" alt="视频策划">
+        <img src="assets/portfolio/plan-03.jpg" alt="软文策划">
+      </div>
+    </article>
+    <article class="plan-card wide">
+      <span class="card-no">03</span>
+      <h3>活动策划 <em>EVENT</em></h3>
+      <div class="card-imgs">
+        <img src="assets/portfolio/plan-03.jpg" alt="活动策划">
+        <img src="assets/portfolio/plan-01.jpg" alt="活动策划">
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 设计 ============ -->
+<section class="section design" id="design">
+  <div class="chapter reveal">
+    <div class="chapter-label">05 / DESIGN WORKS</div>
+    <h2>设计<em>作品</em></h2>
+    <p>VISUAL DESIGN</p>
+    <span class="chapter-num">05</span>
+  </div>
+  <div class="design-intro reveal">
+    <h3>PS 彩平 &amp; 分析图视觉设计</h3>
+    <p>彩平图、分析图的视觉表达与版式设计，覆盖从色彩搭配到信息层级梳理的完整呈现。</p>
+  </div>
+  <div class="design-grid reveal" data-gallery="design">
+    <figure><img src="assets/portfolio/design-01.jpg" alt="彩平设计"></figure>
+    <figure><img src="assets/portfolio/design-02.jpg" alt="分析图设计"></figure>
+    <figure><img src="assets/portfolio/design-03.jpg" alt="彩平设计"></figure>
+    <figure><img src="assets/portfolio/design-04.jpg" alt="分析图设计"></figure>
+    <figure><img src="assets/portfolio/design-05.jpg" alt="视觉设计"></figure>
+    <figure><img src="assets/portfolio/design-06.jpg" alt="视觉设计"></figure>
+  </div>
+</section>
+
+
+<!-- ============ 结尾插画 ============ -->
+<section class="ending">
+  <div class="ending-illustration">
+    <div class="blue-blob2"></div>
+    <img src="assets/portfolio/illustration.png" alt="插画形象">
+  </div>
+  <div class="ending-text">
+    <div class="vert-text2">YOU SHOULD ALWAYS BE BRAVE</div>
+    <h2>GO STRAIGHT</h2>
+    <div class="ending-thanks">THANKS</div>
+    <p>MALY × GELSEY DESIGN</p>
+  </div>
+</section>
+
+<!-- ============ 联系 ============ -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="mini-label">GET IN TOUCH</div>
+    <h2>Let's make<br><em>something.</em></h2>
+    <div class="contact-links">
+      <a href="tel:19847375642">TEL / 19847375642</a>
+      <a href="mailto:1120657405@qq.com">MAIL / 1120657405@qq.com</a>
+    </div>
+    <div class="contact-foot">/ 高欣个人作品集 · 2017—2026 &nbsp; Created and Designed by Gelsey</div>
+  </div>
+</section>
+
+<footer class="footer"><span>M / G</span><span>© 2017—2026 Gelsey</span></footer>
+
+<div class="lightbox" id="lightbox"><img src="" alt=""><button id="lbClose" aria-label="关闭">×</button></div>
+<script src="script.js"></script>
+</body>
+</html>
